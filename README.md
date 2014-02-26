@@ -3,6 +3,14 @@ Robot school is a generic rails app intended for front end caveman learning.
 
 ## Front end features
 The greatest of the front end frontier reside here.
+### Sass project structure
+The structure of the `assets/stylesheets` folder borrows heavily from [The Sass Way](thesassway.com/beginner/how-to-structure-a-sass-project) and Github's [CSS Styleguide](https://github.com/styleguide/css). Robot School's hierarchy follows a similar pattern:
+
+    Stylesheets
+      - Globals : anything original and pure sass (vars/mixins)
+      - Partials : anything else, up to you how it's structured
+      - Vendor : 3rd party stuffs
+      application.css.scss : the manifest for everything
 
 ### Ham-fisted implementations of Sass(SCSS) libraries
 Within `app/assets/stylesheets` is a proprietary `vendor` directory. This directory features some of the universe's favorite UI frameworks, not as gems, but as mooshy, flexible SCSS manifests. __Why?__ This way you can pick and choose, mix and match library components. Edit variables, fuck up mixins, the front end framework is your hackable oyster.
